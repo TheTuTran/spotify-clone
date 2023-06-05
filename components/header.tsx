@@ -13,7 +13,7 @@ className?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({children, className}) => {
-const router = useRouter;
+const router = useRouter();
 
 const handleLogout = () => {
 	// handle logout
