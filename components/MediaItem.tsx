@@ -6,14 +6,16 @@ import Image from "next/image";
 
 interface MediaItemProps {
     data: Song;
-    onClick: (id: string) => void;
+    onClick?: (id: string) => void;
 }
 
 const MediaItem: React.FC<MediaItemProps> = ({ data, onClick }) => {
     const imageUrl = useLoadImage(data);
 
     const handleClick = () => {
-        return onClick(data.id);
+        if (onClick) {
+            return onClick(data.id);
+        }
     }
 
     return (
