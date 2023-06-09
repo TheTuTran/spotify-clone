@@ -51,7 +51,6 @@ const AuthModal = () => {
                     }
                 }}
             />
-            Auth Modal Children!
         </Modal>
     );
 }
