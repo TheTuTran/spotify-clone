@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spotify Clone
 
-## Getting Started
+![Project Image](./public/images/spotify-clone-ss.png)
 
-First, run the development server:
+This project is a detailed replication of the popular music streaming platform, Spotify. The clone is built using Next.js, React, Stripe, Supabase, PostgreSQL, and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Spotify Clone lets users experience a near-real Spotify platform, where they can explore a multitude of songs, create personal playlists, discover new music, and much more. This project exhibits integration with Stripe for smooth payment processing, uses Supabase as the backend, PostgreSQL for database handling, and is styled using the Tailwind CSS framework.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Check out the live demo of the project: [Spotify Clone](https://spotify-clone-thetutran.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Key Features
 
-## Learn More
+- **Song Upload:** Users can upload their own music, enhancing their personalized music experience.
+- **Stripe Integration:** This provides seamless payment processing for premium features.
+- **Supabase and PostgreSQL Database Handling:** Efficient database management enhances the overall user experience.
+- **Tailwind CSS Design:** Ensures a sleek and user-friendly interface.
+- **Full Responsiveness:** Optimized for all devices for an optimal user experience.
+- **User Authentication:** Secure access to personalized features, integrated with Supabase and Github.
+- **File and Image Upload:** Facilitated using Supabase storage.
+- **Client-Side Form Validation:** Implemented using react-hook-form for seamless user interactions.
+- **Server-Side Error Handling:** Utilizes react-toast for efficient error management.
+- **Audio Playback:** Allows users to listen to their favorite songs.
+- **Favorites System:** Users can save and easily access their favorite songs.
+- **Playlists and Liked Songs System:** Allows users to organize and manage their music collections.
+- **Advanced Player Component:** Provides enhanced features and controls for the music player.
+- **Stripe Recurring Payments:** Ensures easy management of premium subscriptions.
+- **Direct Database Access:** Efficient data retrieval in server-side React components, bypassing the need for an API.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions are welcome! Feel free to use the code or learn from it. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Acknowledgements
 
-## Deploy on Vercel
+This project was developed based on the tutorial by CodeWithAntonio. You can check out the tutorial [here](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Name: Tu Tran
+
+Email: tutran.stl@gmail.com  
+
+YouTube Video: [Link to YouTube Video](https://www.youtube.com/watch?v=fScSFhCtfIc)
