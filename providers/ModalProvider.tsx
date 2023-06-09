@@ -1,10 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ProductWithPrice } from "@/types";
 import AuthModal from "@/components/AuthModal";
 import UploadModal from "@/components/UploadModal";
+import SubscribeModal from "@/components/SubscribeModal";
 
-const ModalProvider = () => {
+interface ModalProviderProps {
+    products: ProductWithPrice[];
+}
+
+const ModalProvider: React.FC<ModalProviderProps> = ({products}) => {
     {/* Ensures modal is not shown during server side rendering */}
     const[isMounted, setIsMounted] = useState(false);
 
@@ -20,6 +26,7 @@ const ModalProvider = () => {
         <>
             <AuthModal />
             <UploadModal />
+            <SubscribeModal products={products}/>
         </>
     )
 }

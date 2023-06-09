@@ -12,6 +12,7 @@ import { FaUserAlt } from "react-icons/fa";
 
 import Button from "./Button";
 import useAuthModal from "@/hooks/useAuthModal";
+import usePlayer from "@/hooks/usePlayer";
 
 interface HeaderProps {
 children: React.ReactNode;
@@ -21,13 +22,14 @@ className?: string;
 const Header: React.FC<HeaderProps> = ({children, className}) => {
 	const router = useRouter();
 	const AuthModal = useAuthModal();
+    const player = usePlayer();
 
 	const supabaseClient = useSupabaseClient();
 	const { user } = useUser();
 
 	const handleLogout = async () => {
 		const { error } = await supabaseClient.auth.signOut();
-		// TODO: reset any playing songs cause when user logs out, they wont be able to paly song
+		player.reset();
 		router.refresh();
 		if (error) {
 			toast.error(error.message)
