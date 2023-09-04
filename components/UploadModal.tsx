@@ -12,9 +12,6 @@ import uniqid from "uniqid";
 import useUploadModal from "@/hooks/useUploadModal";
 import Modal from "./Modal"
 
-
-
-
 const UploadModal = () => {
     const uploadModal = useUploadModal();
     const [isLoading, setIsLoading] = useState(false);
